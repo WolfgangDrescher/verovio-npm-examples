@@ -1,7 +1,7 @@
 # verovio npm examples
 
-https://github.com/rism-digital/verovio/discussions/2815
-https://github.com/WolfgangDrescher/verovio-npm-improvements
+* https://github.com/rism-digital/verovio/discussions/2815
+* https://github.com/WolfgangDrescher/verovio-npm-improvements
 
 * [`cd node-esm`](/node-esm/)
 * [`cd node-commonjs`](/node-commonjs/)
