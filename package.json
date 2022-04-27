@@ -8,6 +8,7 @@
     "browser-script-module",
     "node-commonjs",
     "node-esm",
-    "vue-app"
+    "vue-app",
+    "react-app"
   ]
 }
