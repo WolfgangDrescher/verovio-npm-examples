@@ -1,0 +1,13 @@
+{
+  "name": "verovio-npm-examples",
+  "scripts": {
+      "setup": "./setup",
+      "update": "./update"
+  },
+  "workspaces": [
+    "browser-script-module",
+    "node-commonjs",
+    "node-esm",
+    "vue"
+  ]
+}
