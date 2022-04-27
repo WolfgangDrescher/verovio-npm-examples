@@ -1,0 +1,9 @@
+{
+  "name": "browser-script-module",
+  "scripts": {
+    "serve": "serve"
+  },
+  "dependencies": {
+    "verovio": "github:WolfgangDrescher/verovio-npm-improvements"
+  }
+}
