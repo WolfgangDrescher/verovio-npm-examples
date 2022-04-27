@@ -1,0 +1,6 @@
+{
+  "name": "node-esm",
+  "dependencies": {
+    "verovio": "github:WolfgangDrescher/verovio-npm-improvements"
+  }
+}
