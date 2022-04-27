@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import Module from 'verovio/wasm/verovio-toolkit-wasm-hum';
+import Module from 'verovio/wasm/verovio-toolkit-wasm-hum.js';
 import { VerovioToolkit } from 'verovio';
 
 const data = ref();
