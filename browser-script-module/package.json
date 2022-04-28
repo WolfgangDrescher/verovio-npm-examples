@@ -4,6 +4,6 @@
     "serve": "serve"
   },
   "dependencies": {
-    "verovio": "github:WolfgangDrescher/verovio-npm-improvements"
+    "verovio": "github:WolfgangDrescher/verovio-npm-improvements#cjs"
   }
 }

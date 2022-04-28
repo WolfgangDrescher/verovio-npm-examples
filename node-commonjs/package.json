@@ -1,6 +1,6 @@
 {
   "name": "node-commonjs",
   "dependencies": {
-    "verovio": "github:WolfgangDrescher/verovio-npm-improvements"
+    "verovio": "github:WolfgangDrescher/verovio-npm-improvements#cjs"
   }
 }

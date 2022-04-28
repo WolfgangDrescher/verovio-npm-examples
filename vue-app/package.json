@@ -7,7 +7,7 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
-    "verovio": "github:WolfgangDrescher/verovio-npm-improvements",
+    "verovio": "github:WolfgangDrescher/verovio-npm-improvements#cjs",
     "vue": "^3.2.33"
   },
   "devDependencies": {
