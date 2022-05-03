@@ -11,7 +11,7 @@ import fs from 'fs';
 Module().then((VerovioModule) => {
     const verovioToolkit = new VerovioToolkit(VerovioModule);
     console.log(verovioToolkit.getVersion());
-    const score = fs.readFileSync('demo.krn');
+    const score = fs.readFileSync('demo.mei').toString();
     verovioToolkit.loadData(score);
     const data = verovioToolkit.renderToSVG(1, {});
     console.log(data);
