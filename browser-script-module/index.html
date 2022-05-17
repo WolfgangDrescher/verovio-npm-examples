@@ -25,7 +25,7 @@
             Module().then((VerovioModule) => {
                 const verovioToolkit = new VerovioToolkit(VerovioModule);
                 console.log(verovioToolkit.getVersion());
-                const url = 'https://raw.githubusercontent.com/WolfgangDrescher/lassus-geistliche-psalmen/master/kern/01-beatus-vir.krn';
+                const url = '/demo.mei';
                 fetch(url).then(response => {
                     return response.text()
                 }).then((score) => {
