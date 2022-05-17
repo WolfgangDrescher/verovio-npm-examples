@@ -23,7 +23,7 @@
             });
 
             Module().then((VerovioModule) => {
-                const verovioToolkit = new VerovioToolkit(VerovioModule);
+                const verovioToolkit = new VerovioToolkit(Module);
                 console.log(verovioToolkit.getVersion());
                 const url = '/demo.mei';
                 fetch(url).then(response => {
