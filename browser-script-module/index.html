@@ -12,6 +12,16 @@
             import Module from './node_modules/verovio/wasm/verovio-toolkit-wasm-hum.js';
             import { VerovioToolkit } from './node_modules/verovio/dist/index.mjs';
 
+            HTMLDocument.prototype.ready = new Promise(function (resolve) {
+                if (document.readyState !== 'loading') {
+                    return resolve();
+                } else {
+                    document.addEventListener('DOMContentLoaded', function () {
+                        return resolve();
+                    });
+                }
+            });
+
             Module().then((VerovioModule) => {
                 const verovioToolkit = new VerovioToolkit(VerovioModule);
                 console.log(verovioToolkit.getVersion());
@@ -21,8 +31,8 @@
                 }).then((score) => {
                     verovioToolkit.loadData(score);
                     const data = verovioToolkit.renderToSVG(1, {});
-                    document.addEventListener('DOMContentLoaded', function (event) {
-                        document.getElementById('canvas').innerHTML = data;
+                    document.ready.then(function () {
+                        window.document.getElementById('canvas').innerHTML = data;
                     });
                 });
             });
