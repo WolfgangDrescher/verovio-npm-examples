@@ -9,8 +9,8 @@
     </head>
     <body>
         <script type="module">
-            import Module from './node_modules/verovio/wasm/verovio-toolkit-wasm-hum.js';
-            import { VerovioToolkit } from './node_modules/verovio/dist/index.mjs';
+            import Module from './node_modules/verovio/modules/verovio-toolkit-wasm.js';
+            import { VerovioToolkit } from './node_modules/verovio/dist/verovio.es.js';
 
             HTMLDocument.prototype.ready = new Promise(function (resolve) {
                 if (document.readyState !== 'loading') {
