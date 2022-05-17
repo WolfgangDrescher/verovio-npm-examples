@@ -22,7 +22,7 @@
                 }
             });
 
-            Module().then((VerovioModule) => {
+            Module.onRuntimeInitialized = () => {
                 const verovioToolkit = new VerovioToolkit(Module);
                 console.log(verovioToolkit.getVersion());
                 const url = '/demo.mei';
@@ -35,7 +35,7 @@
                         window.document.getElementById('canvas').innerHTML = data;
                     });
                 });
-            });
+            };
         </script>
         <div id="canvas"></div>
     </body>
