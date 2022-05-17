@@ -1,0 +1,6 @@
+{
+    "name": "browser-vanilla-js",
+    "dependencies": {
+        "verovio": "github:WolfgangDrescher/verovio-npm-improvements#v2"
+    }
+}

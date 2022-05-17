@@ -6,6 +6,7 @@
   },
   "workspaces": [
     "browser-script-module",
+    "browser-vanilla-js",
     "node-commonjs",
     "node-esm",
     "vue-app",
