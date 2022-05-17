@@ -1,24 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import Module from 'verovio/wasm/verovio-toolkit-wasm-hum.js';
+import Module from 'verovio/wasm';
 import { VerovioToolkit } from 'verovio';
 
 function App() {
   const [score, setScore] = useState(null);
 
   useEffect(() => {
-    setTimeout(() => {
-      Module().then((VerovioModule) => {
-        const verovioToolkit = new VerovioToolkit(VerovioModule);
+    Module.onRuntimeInitialized = () => {
+        const verovioToolkit = new VerovioToolkit(Module);
         console.log(verovioToolkit.getVersion());
-        const url = 'https://raw.githubusercontent.com/WolfgangDrescher/lassus-geistliche-psalmen/master/kern/01-beatus-vir.krn';
+        const url = '/demo.mei';
         fetch(url).then(response => {
-          return response.text()
+            return response.text()
         }).then((score) => {
-          verovioToolkit.loadData(score);
-          setScore(verovioToolkit.renderToSVG(1, {}));
+            verovioToolkit.loadData(score);
+            setScore(verovioToolkit.renderToSVG(1, {}));
         });
-      });
-    });
+    };
   }, []);
 
   return (
