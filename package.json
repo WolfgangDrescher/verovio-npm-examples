@@ -9,6 +9,7 @@
     "browser-vanilla-js-legacy",
     "node-commonjs",
     "node-esm",
+    "node-legacy",
     "vue-app",
     "react-app"
   ]

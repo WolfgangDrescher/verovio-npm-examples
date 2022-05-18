@@ -1,0 +1,6 @@
+{
+  "name": "node-legacy",
+  "dependencies": {
+    "verovio": "github:WolfgangDrescher/verovio-npm-improvements#v2"
+  }
+}
