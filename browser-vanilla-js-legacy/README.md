@@ -1,3 +1,8 @@
 # browser-vanilla-js-legacy
 
-Open verovio-toolkit-wasm.html in a web browser.
+Open one of these files in a web browser:
+
+* [verovio-toolkit-hum.html](./verovio-toolkit-hum.html)
+* [verovio-toolkit-light.html](./verovio-toolkit-light.html)
+* [verovio-toolkit-wasm.html](./verovio-toolkit-wasm.html)
+* [verovio-toolkit.html](./verovio-toolkit.html)
