@@ -10,7 +10,6 @@
     const humdrum = 'https://raw.githubusercontent.com/WolfgangDrescher/lassus-geistliche-psalmen/master/kern/01-beatus-vir.krn';
     console.log(verovio);
     // Module.onRuntimeInitialized = function () {
-        console.log('onRuntimeInitialized');
         fetch(mei).then(response => {
             return response.text();
         }).then(data => {
