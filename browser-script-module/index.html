@@ -8,9 +8,9 @@
         <title>browser-script-module</title>
     </head>
     <body>
-        <script src="./node_modules/verovio/modules/verovio-toolkit-wasm.cjs" defer></script>
+        <script src="./node_modules/verovio/modules/verovio-toolkit-wasm.js"></script>
         <script type="module">
-            import { VerovioToolkit } from './node_modules/verovio/dist/verovio.es.js';
+            import { VerovioToolkit } from './node_modules/verovio/dist/index.mjs';
 
             HTMLDocument.prototype.ready = new Promise(function (resolve) {
                 if (document.readyState !== 'loading') {
