@@ -1,6 +1,6 @@
 import Module from 'verovio/wasm';
 import { VerovioToolkit } from 'verovio';
-import fs from 'fs';
+import fs from 'node:fs';
 
 Module.onRuntimeInitialized = () => {
     const verovioToolkit = new VerovioToolkit(Module);
