@@ -1,5 +1,5 @@
 const Module = require('verovio/wasm');
-const { VerovioToolkit } = require('verovio');
+const { VerovioToolkit } = require('verovio/next');
 const fs = require('node:fs');
 
 Module.onRuntimeInitialized = () => {

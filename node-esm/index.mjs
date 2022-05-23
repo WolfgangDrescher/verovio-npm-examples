@@ -1,5 +1,5 @@
 import Module from 'verovio/wasm';
-import { VerovioToolkit } from 'verovio';
+import { VerovioToolkit } from 'verovio/next';
 import fs from 'node:fs';
 
 Module.onRuntimeInitialized = () => {
