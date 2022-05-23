@@ -2,6 +2,8 @@
 
 * https://github.com/rism-digital/verovio/discussions/2815
 * https://github.com/WolfgangDrescher/verovio-npm-improvements
+* For better performance during development `verovio-npm-improvements` was added
+  as a submodule. Don't forget to fetch it.
 
 ## Demos
 
