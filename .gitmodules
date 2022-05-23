@@ -1,0 +1,3 @@
+[submodule "verovio-npm-improvements"]
+	path = verovio-npm-improvements
+	url = git@github.com:WolfgangDrescher/verovio-npm-improvements.git
