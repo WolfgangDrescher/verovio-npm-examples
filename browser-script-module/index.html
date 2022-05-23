@@ -8,8 +8,8 @@
         <title>browser-script-module</title>
     </head>
     <body>
+        <script src="./node_modules/verovio/modules/verovio-toolkit-wasm.cjs" defer></script>
         <script type="module">
-            import Module from './node_modules/verovio/modules/verovio-toolkit-wasm.cjs';
             import { VerovioToolkit } from './node_modules/verovio/dist/verovio.es.js';
 
             HTMLDocument.prototype.ready = new Promise(function (resolve) {
