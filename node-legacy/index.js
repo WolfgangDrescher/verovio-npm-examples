@@ -1,4 +1,4 @@
-const verovio = require('verovio/legacy/wasm');
+const verovio = require('verovio');
 const fs = require('fs');
 
 verovio.module.onRuntimeInitialized = () => {
