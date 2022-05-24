@@ -5,12 +5,12 @@
       "update": "./update"
   },
   "workspaces": [
-    "browser-script-module",
-    "browser-vanilla-js-legacy",
-    "node-commonjs",
-    "node-esm",
-    "node-legacy",
-    "vue-app",
-    "react-app"
+      "browser-script-module",
+      "browser-vanilla-js-legacy",
+      "node-commonjs",
+      "node-esm",
+      "node-legacy",
+      "vue-app",
+      "react-app"
   ]
 }
