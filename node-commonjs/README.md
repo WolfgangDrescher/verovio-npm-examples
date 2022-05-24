@@ -2,5 +2,5 @@
 
 ```sh
 npm install
-node ./index.cjs
+node index.cjs
 ```

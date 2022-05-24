@@ -2,5 +2,5 @@
 
 ```sh
 npm install
-node ./index.mjs
+node index.mjs
 ```
