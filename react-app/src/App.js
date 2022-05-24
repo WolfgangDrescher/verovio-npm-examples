@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import Module from 'verovio/wasm';
-import { VerovioToolkit } from 'verovio';
+import createVerovioModule from 'verovio/wasm';
+import { VerovioToolkit } from 'verovio/next';
 
 function App() {
   const [score, setScore] = useState(null);
 
   useEffect(() => {
-    Module.onRuntimeInitialized = () => {
-        const verovioToolkit = new VerovioToolkit(Module);
+    createVerovioModule().then(VerovioModule => {
+        const verovioToolkit = new VerovioToolkit(VerovioModule);
         console.log(verovioToolkit.getVersion());
         const url = '/demo.mei';
         fetch(url).then(response => {
@@ -16,7 +16,7 @@ function App() {
             verovioToolkit.loadData(score);
             setScore(verovioToolkit.renderToSVG(1, {}));
         });
-    };
+    });
   }, []);
 
   return (

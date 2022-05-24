@@ -1,12 +1,12 @@
 <script setup>
 import { ref } from 'vue';
-import Module from 'verovio/wasm';
-import { VerovioToolkit } from 'verovio';
+import createVerovioModule from 'verovio/wasm';
+import { VerovioToolkit } from 'verovio/next';
 
 const data = ref();
 
-Module.onRuntimeInitialized = () => {
-  const verovioToolkit = new VerovioToolkit(Module);
+createVerovioModule().then(VerovioModule => {
+  const verovioToolkit = new VerovioToolkit(VerovioModule);
   console.log(verovioToolkit.getVersion());
   const url = '/demo.mei';
   fetch(url).then(response => {
@@ -15,7 +15,7 @@ Module.onRuntimeInitialized = () => {
     verovioToolkit.loadData(score);
     data.value = verovioToolkit.renderToSVG(1, {});
   });
-};
+});
 </script>
 
 <template>
