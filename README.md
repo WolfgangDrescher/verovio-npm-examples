@@ -7,7 +7,7 @@
 
 * [`cd node-esm`](/node-esm/)
 * [`cd node-commonjs`](/node-commonjs/)
-* [`cd browser script module`](/browser-script-module/)
+* [`cd browser-script-module`](/browser-script-module/)
 * [`cd vue-app`](/vue-app/)
 * [`cd react-app`](/react-app/)
 
